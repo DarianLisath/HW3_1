@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+void showLetterGrade(float);
 int main()
 {
     printf("Enter your score!");
@@ -8,6 +8,12 @@ int main()
     float score;
     scanf("%f", &score);
 
+    showLetterGrade(score);
+
+    return 0;
+}
+void showLetterGrade(float score)
+{
     if (score >= 94.0F)
     {
         printf("A");
@@ -28,5 +34,4 @@ int main()
     {
         printf("F");
     }
-    return 0;
 }
